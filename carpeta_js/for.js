@@ -1,11 +1,36 @@
 const divPrincipal = document.createElement("div");
 document.body.appendChild(divPrincipal);
+divPrincipal.setAttribute('id', 'div-1');
 
-const pagina1 = document.createElement("");
+const pagina1 = document.createElement("a");
+pagina1.setAttribute('href', 'ejercicioFor-1.html');
 pagina1.setAttribute('id', 'pagina-1');
 pagina1.textContent = ("Click para ir a ejercicio 1");
 divPrincipal.appendChild(pagina1);
 
+const pagina2 = document.createElement("a");
+pagina2.setAttribute('href', 'ejercicioFor-2.html')
+pagina2.setAttribute('id', 'pagina-2');
+pagina2.textContent = ("Click para ir a ejercicio 2");
+divPrincipal.appendChild(pagina2);
+
+const pagina3 = document.createElement("a");
+pagina3.setAttribute('href', 'ejercicioFor-3.html')
+pagina3.setAttribute('id', 'pagina-3');
+pagina3.textContent = ("Click para ir a ejercicio 3");
+divPrincipal.appendChild(pagina3);
+
+const pagina4 = document.createElement("a");
+pagina4.setAttribute('href', 'ejercicioFor-4.html')
+pagina4.setAttribute('id', 'pagina-4');
+pagina4.textContent = ("Click para ir a ejercicio 4");
+divPrincipal.appendChild(pagina4);
+
+const pagina5 = document.createElement("a");
+pagina5.setAttribute('href', 'ejercicioFor-5.html')
+pagina5.setAttribute('id', 'pagina-5');
+pagina5.textContent = ("Click para ir a ejercicio 5");
+divPrincipal.appendChild(pagina5);
 
 
 /* 1. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
@@ -16,15 +41,6 @@ divPrincipal.appendChild(pagina1);
 4444
 55555
 666666 */
-function piramide() {
-    var i, rep;
-    for (i = 1; i <= 30; i++) {
-        for (rep = 0; rep < i; rep++) {
-            document.write(i);
-        }
-        document.write("<br>");
-    }
-}
 
 /* 2. Haz un script que escriba una pirámide inversa 
 de los números del 1 al número que indique el usuario de la siguiente forma:
