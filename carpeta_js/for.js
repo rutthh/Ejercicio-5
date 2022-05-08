@@ -1,3 +1,13 @@
+const divPrincipal = document.createElement("div");
+document.body.appendChild(divPrincipal);
+
+const pagina1 = document.createElement("");
+pagina1.setAttribute('id', 'pagina-1');
+pagina1.textContent = ("Click para ir a ejercicio 1");
+divPrincipal.appendChild(pagina1);
+
+
+
 /* 1. Realiza un script que escriba una pirámide del 1 al 30 de la siguiente forma :
 
 1
@@ -6,6 +16,15 @@
 4444
 55555
 666666 */
+function piramide() {
+    var i, rep;
+    for (i = 1; i <= 30; i++) {
+        for (rep = 0; rep < i; rep++) {
+            document.write(i);
+        }
+        document.write("<br>");
+    }
+}
 
 /* 2. Haz un script que escriba una pirámide inversa 
 de los números del 1 al número que indique el usuario de la siguiente forma:
